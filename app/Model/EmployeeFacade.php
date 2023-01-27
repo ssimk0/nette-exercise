@@ -2,6 +2,7 @@
 
 namespace App\Model;
 
+use App\Store\StoreInterface;
 use Nette;
 
 final class EmployeeFacade
@@ -11,7 +12,7 @@ final class EmployeeFacade
     private $storeType = 'Employees';
 
     public function __construct(
-        private $store,
+        private StoreInterface $store,
     )
     {
     }

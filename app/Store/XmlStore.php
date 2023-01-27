@@ -3,7 +3,6 @@
 namespace App\Store;
 
 use SimpleXMLElement;
-use Tracy\Debugger;
 
 class XmlStore implements StoreInterface
 {
