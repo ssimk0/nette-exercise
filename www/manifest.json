@@ -1,0 +1,47 @@
+{
+  "src/main.less": {
+    "file": "assets/main-49ad90d6.css",
+    "src": "src/main.less",
+    "isEntry": true
+  },
+  "src/main.js": {
+    "file": "assets/main-27c53fc1.js",
+    "src": "src/main.js",
+    "isEntry": true,
+    "css": [
+      "assets/main-49ad90d6.css"
+    ]
+  },
+  "src/app.jsx": {
+    "file": "assets/app-56afa3bc.js",
+    "src": "src/app.jsx",
+    "isEntry": true,
+    "imports": [
+      "src/EmployeeForm.jsx",
+      "src/Employees.jsx",
+      "src/axios.js"
+    ],
+    "css": [
+      "assets/main-49ad90d6.css"
+    ]
+  },
+  "src/Employees.jsx": {
+    "file": "assets/Employees-2f4fcd61.js",
+    "src": "src/Employees.jsx",
+    "isEntry": true,
+    "imports": [
+      "src/EmployeeForm.jsx",
+      "src/axios.js"
+    ]
+  },
+  "src/axios.js": {
+    "file": "assets/axios-6d9e51d9.js",
+    "src": "src/axios.js",
+    "isEntry": true
+  },
+  "src/EmployeeForm.jsx": {
+    "file": "assets/EmployeeForm-edf5ac55.js",
+    "src": "src/EmployeeForm.jsx",
+    "isEntry": true
+  }
+}

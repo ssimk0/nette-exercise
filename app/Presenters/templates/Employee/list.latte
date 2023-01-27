@@ -1,0 +1,40 @@
+{block content}
+<div class="container">
+    <div class="my-5">
+        <div class="row">
+            <div class="col col-md-6">
+                <h3>Employees</h3>
+            </div>
+            <div class="col col-md-6 text-end">
+                <a n:href="Employee:add" class="btn btn-primary"> Pridat zamestnanca <i
+                            class="bi bi-plus-lg fw-bold"></i></a>
+            </div>
+        </div>
+        <table class="table table-striped table-bordered table-hover mt-3">
+            <thead>
+            <tr>
+                {foreach $columns as $column}
+                    <th scope="col">{$column['name']}</th>
+                {/foreach}
+                <th> Akcie</th>
+            </tr>
+            </thead>
+            <tbody>
+            {foreach $employees as $row}
+                <tr>
+                    {foreach $columns as $column}
+                        <th scope="col">{$column['value']($row)}</th>
+                    {/foreach}
+                    <th scope="col" class="text-end">
+                        <a class="btn btn-outline-dark mr-5" n:href="Employee:edit $row['id']">Upravit <i
+                                    class="bi bi-pencil"></i></a>
+                        <a class="btn btn-outline-danger" n:href="Employee:remove $row['id']">Vymazat <i
+                                    class="bi bi-trash"></i></a>
+
+                    </th>
+                </tr>
+            {/foreach}
+            </tbody>
+    </div>
+    </table>
+</div>

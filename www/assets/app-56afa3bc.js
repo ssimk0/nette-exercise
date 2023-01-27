@@ -1,0 +1,1 @@
+import{b as r,j as t,R as a}from"./EmployeeForm-edf5ac55.js";/* empty css             */import{E as m}from"./Employees-2f4fcd61.js";import"./axios-6d9e51d9.js";var o={},e=r;o.createRoot=e.createRoot,o.hydrateRoot=e.hydrateRoot;const c=o.createRoot(document.getElementById("root"));c.render(t(a.StrictMode,{children:t(m,{})}));

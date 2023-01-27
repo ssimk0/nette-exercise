@@ -1,0 +1,11 @@
+services:
+    - App\Router\RouterFactory::createRouter
+    - Vite(http://localhost:5173, %wwwDir%/manifest.json, not(%debugMode%))
+    store:
+        create: App\Store\XmlStore("store/data.xml")
+    nette.latteFactory:
+        setup:
+           - addFilter(asset, App\Latte\AssetFilter())
+    employees:
+        create: App\Model\EmployeeFacade(@store)
+
